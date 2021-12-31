@@ -1,0 +1,31 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 84px);
+  overflow: hidden;
+  display: flex;
+  padding: 0px 100px;
+}
+
+.post {
+  overflow-y: scroll;
+}
+
+.post .name {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.post .details {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.comments {
+  background-color: #eee;
+  overflow-y: scroll;
+}
+
+.comments .heading {
+  font-size:  1.1rem;
+  font-weight: 600;
+}

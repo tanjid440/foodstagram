@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodstagram</title>
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <!-- <script src="./js/sessionCheck.js"></script> -->
+  <script src="./components/topHeader.js"></script>
+  <script type="module" src="./js/dashboard.js"></script>
+</head>
+<body>
+  <top-header></top-header>
+  <div class="container">
+    <div class="left-sidebar pt-2 pl-4 pr-4">
+      <div class="text-bold mb-4">Create New Post</div>
+      <input type="text" id="newLocation" class="form-input mb-2 w-100" placeholder="Location">
+      <textarea id="newContent" class="form-input mb-2 pa-2 w-100 h-200px" placeholder="Post Content" style="resize: none;"></textarea>
+      <div class="upload-btn-wrapper">
+        <button class="btn btn-outline">Upload Image</button>
+        <input type="file" name="myfile" />
+      </div>
+      <button class="btn w-100 mt-2">CREATE</button>
+    </div>
+    <div class="main"></div>
+    <div class="filter pt-2 pl-4 pr-4">
+      <div class="text-bold mb-4">Filter posts</div>
+      <input type="text" id="newLocation" class="form-input mb-2 w-100" placeholder="By Location">
+      <button class="btn w-100 mb-4">FILTER</button>
+      <div class="text-bold mb-4">Sort posts</div>
+      <select id="sorting" class="form-input w-100 mb-2">
+        <option value="asc" selected>Newer posts first</option>
+        <option value="dsc">Older posts first</option>
+      </select>
+      <button class="btn w-100 mb-4">SORT</button>
+    </div>
+  </div>
+</body>
+</html>

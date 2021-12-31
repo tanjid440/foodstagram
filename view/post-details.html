@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodstagram | Post</title>
+  <link rel="stylesheet" href="./css/utility.css">
+  <link rel="stylesheet" href="./css/post-details.css">
+  <!-- <script src="./js/sessionCheck.js"></script> -->
+  <script src="./js/getPostDetails.js" type="module"></script>
+  <script src="./components/topHeader.js"></script>
+</head>
+<body>
+  <top-header></top-header>
+  <div class="container">
+    <div class="post w-65 pt-2 pr-2">
+      <div class="column mb-2">
+        <div class="name">
+          User Name
+        </div>
+        <div class="details">
+          Location
+        </div>
+        <div class="details">
+          Time
+        </div>
+      </div>
+      <div class="caption mb-3">
+        Caption
+      </div>
+      <div class="post-img">
+        <img src="./assets/default.jpg" class="w-100">
+      </div>
+    </div>
+    <div class="comments w-35 pt-2 pl-4 pr-4">
+      <div class="heading mb-2">
+        Add New Comment
+      </div>
+      <input type="text" class="form-input w-100 mb-2" placeholder="Type here...">
+      <button class="btn pl-2 pr-2 mb-4">COMMENT</button>
+      <div class="heading mb-2">
+        Comments on this post
+      </div>
+      <div class="comment-list">
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>

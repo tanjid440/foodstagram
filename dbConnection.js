@@ -1,4 +1,4 @@
-const mariadb = require("mariadb/callback");
+const mariadb = require("mariadb");
 
 let connection = null;
 
@@ -9,13 +9,13 @@ const options = {
   database: 'foodstagram',
 }
 
-function createConnection() {
-  connection = mariadb.createConnection(options);
+async function createConnection() {
+  connection = await mariadb.createConnection(options);
 }
 
-function getConnection() {
+async function getConnection() {
   if (connection == null) {
-    createConnection()
+    await createConnection()
     return connection
   }
   return connection
