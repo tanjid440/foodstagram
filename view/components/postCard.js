@@ -65,7 +65,7 @@ class PostCard extends HTMLElement {
         </div>
         <div class="comment">
           comments
-          <button>Add new comment</button>
+          <a href='/post-details.html'>Add new comment</a>
         </div>
       </div>
       <div class="post-section">
