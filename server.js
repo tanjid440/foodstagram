@@ -3,7 +3,8 @@ const path = require('path');
 const cors = require('cors');
 const { graphqlHTTP } = require("express-graphql");
 const { GraphQLSchema } = require("graphql");
-const { createConnection } = require('./dbConnection')
+const { createConnection } = require('./dbConnection');
+const RootMutation = require("./RootMutation");
 
 createConnection().then(_ => {
   
@@ -16,6 +17,7 @@ createConnection().then(_ => {
   
   const schema = new GraphQLSchema({
     query: RootQuery,
+    mutation: RootMutation
   });
 
   
